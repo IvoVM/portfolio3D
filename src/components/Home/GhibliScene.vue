@@ -2,12 +2,16 @@
   <div class="ghibliScene">
     <SceneSection id="Ghibli">
       <TextBlock>
+        <p class="-big">
+          And studying
+          <span class="-purple"
+            >Computer engineering.</span
+          >
+        </p>
         <p>
-          Before designing for web, I was creating
-          <span class="-big -purple">
-            3D models, matte painting and advertisements
-          </span>
-          for many brands, TV commercials, games...
+          My academic journey has significantly enriched my approach to web
+          development. It has provided me with a broad knowledge base and
+          diverse perspectives that I apply to my creative processes.
         </p>
       </TextBlock>
 
@@ -27,15 +31,12 @@
     <SceneSection id="Ghibli3">
       <TextBlock>
         <p class="-big">
-          And studying
           <span class="-purple"
-            >Philosophy, Japanese animation, fine arts and video games.</span
+            >Hope you enjoy it .</span
           >
         </p>
         <p>
-          All of these subjects have a major impact on how I start and develop
-          my creative processes, leading the way on how I view web development
-          today.
+          Right now i am open to work.
         </p>
       </TextBlock>
     </SceneSection>

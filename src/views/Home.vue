@@ -4,7 +4,7 @@
     <GapBlock />
 
     <TitleSection scene="curriculum">
-      <TitleFunction params="/^.*$/gi" subtitle="&lt;WorkShowcase&gt;"
+      <TitleFunction params="slowDownScroll()" subtitle="&lt;WorkShowcase&gt;"
         >myCV</TitleFunction
       >
     </TitleSection>
@@ -19,7 +19,7 @@
       <TitleFunction subtitle="background.bmp">
         <span
           class="line"
-          v-for="text in ['Art', 'Philosophy', 'Games']"
+          v-for="text in ['Art', 'Development', 'Games']"
           :key="text"
         >
           <span class="params">${</span>{{ text }}<span class="params">}</span>

@@ -30,20 +30,21 @@
 
         <ul>
           <li>
-            <router-link to="/" title="Home">.is()</router-link>
+            <router-link to="/" title="Home">.Home()</router-link>
           </li>
           <li>
-            <router-link to="/about" title="About me">.about()</router-link>
+            <router-link to="/about" title="About me">.About()</router-link>
           </li>
-          <li>
-            <a :href="`mailto:${data.email}`" title="Send me an email"
-              >.email()</a
-            >
+          <li class="social-link">
+            <a href="https://www.linkedin.com/in/ivo-valentin-mastrangelo-42270521b/" title="LinkedIn" target="_blank">
+              LinkedIn
+              <LinkedInIcon />
+            </a>
           </li>
-          <li v-for="link in data.links" :key="link.url" class="social-link">
-            <a :href="link.url" :title="link.title" target="_blank">
-              {{ link.label || null }}
-              <component v-if="link.icon" :is="link.icon" />
+          <li class="social-link">
+            <a href="https://github.com/IvoVM" title="GitHub" target="_blank">
+              GitHub
+              <GithubIcon />
             </a>
           </li>
         </ul>
@@ -51,6 +52,7 @@
     </div>
   </header>
 </template>
+
 
 <script>
 import { fetchData } from '@/utils'

@@ -2,13 +2,13 @@
   <section class="scene-intro" id="intro">
     <div class="static-container">
       <h1 class="title">
-        <span class="iuri">iuri</span>
-        <span class="func">.is()</span>
+        <span class="iuri">Ivo</span>
+        <span class="func">.Portfolio()</span>
       </h1>
 
       <TextBlock>
-        <p class="-purple">Iuri de Paula</p>
-        <p class="-gray">Creative frontend developer</p>
+        <p class="-purple">Take your time and have fun!</p>
+        <p class="-gray">Fullstack Developer</p>
       </TextBlock>
     </div>
   </section>

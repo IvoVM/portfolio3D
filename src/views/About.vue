@@ -2,42 +2,51 @@
   <div id="about" class="wrapper">
     <div class="pic"></div>
     <div class="static-container">
-      <h1 class="title">about(<span class="params">iuri</span>)</h1>
+      <h1 class="title">About me(<span class="params">Ivo</span>)</h1>
 
       <TextBlock>
         <div class="first-fold">
           <ul class="about-contact">
-            <li v-for="link in data.links" :key="link.url">
-              <a :href="link.url" :title="link.title" target="_blank">
-                {{ link.label || null }}
-                <component v-if="link.icon" :is="link.icon" />
+            <li class="social-link">
+              <a
+                href="https://www.linkedin.com/in/ivo-valentin-mastrangelo-42270521b/"
+                title="LinkedIn"
+                target="_blank"
+              >
+                <LinkedInIcon />
               </a>
             </li>
+            <li class="social-link">
+              <a href="https://github.com/IvoVM" title="GitHub" target="_blank">
+                <GithubIcon />
+              </a>
+            </li>
+
             <li v-if="data.cv">
               Download my
               <a
-                :href="`./${data.cv.file}`"
-                :title="data.cv.title"
+                :href="require('@/assets/mi_cv.pdf')"
+                download="mi_cv.pdf"
+                title="Download my CV"
                 target="_blank"
                 class="bt"
               >
-                {{ data.cv.label }}
+                CV
                 <CVIcon />
               </a>
             </li>
           </ul>
 
           <p class="-purple">
-            <span v-for="(line, i) in data.description" :key="i">
-              {{ line }}<br />
+            <span>
+              Frontend developer heavily influenced by storytelling,
+              interactions, and UX. Addicted to music, and games.
+              <br />
             </span>
+            <span> From Argentina </span>
           </p>
           <p class="-gray" v-if="data.experiences">
-            <span v-for="(line, i) in data.subtitles" :key="i">
-              // {{ line }}<br />
-            </span>
-            // {{ data.experiences[0].position }} @
-            {{ data.experiences[0].company }}
+            <span> Full Stack Developer </span>
           </p>
         </div>
 
@@ -45,20 +54,37 @@
           <h2>Main skills</h2>
           <div class="columns fluent">
             <ul>
-              <li v-for="(skills, i) in data.skills" :key="i">
-                {{ skills.join(', ') }}<br />
+              <li>Frontend, Backend<br />JavaScript Fullstack</li>
+              <li>
+                JavaScript,CSS,HTML<br />
+                React, Angular
               </li>
+              <li>
+                Firebase,Express.js,<br />
+                MongoDB PostgreSQL
+              </li>
+              <li>
+                Bootstrap, Websockets<br />
+                SCSS, TypeScript
+              </li>
+              <li>Ionic, React Native</li>
             </ul>
           </div>
 
           <h2>Experience</h2>
           <div class="columns experience">
             <ul>
-              <li v-for="(experience, i) in data.experiences" :key="i">
-                <strong class="-purple">{{ experience.position }}</strong>
+              <li>
+                <strong class="-purple">Freelance Developer</strong>
                 <br />
-                @ {{ experience.company }}<br />
-                {{ experience.time || null }}
+                @ freelance<br />
+                2019 - 2021
+              </li>
+              <li>
+                <strong class="-purple">Frontend Developer</strong>
+                <br />
+                @Lomi<br />
+                2022 - 2023
               </li>
             </ul>
           </div>
@@ -66,12 +92,10 @@
           <h2>Languages</h2>
           <div class="columns languages">
             <ul>
-              <li v-for="(langs, level) in data.languages" :key="level">
-                <span class="-comment">// {{ level }}</span
-                ><br />
-                <span v-for="[locale, label] in langs" :key="locale"
-                  ><em class="-purple">{{ locale }}</em> {{ label }}<br
-                /></span>
+              <li>
+                <span class="-comment">// fluent</span><br />
+                <span><em class="-purple">en-US</em> English</span><br />
+                <span><em class="-purple">es-ES</em> Spanish</span><br />
               </li>
             </ul>
           </div>
@@ -79,7 +103,9 @@
           <h2>Also busy with</h2>
           <div class="columns busy">
             <ul>
-              <li v-for="busy in data.busy" :key="busy">{{ busy }}</li>
+              <li>Games</li>
+              <li>Playing with my dog</li>
+              <li>Gym</li>
             </ul>
           </div>
         </div>
@@ -183,12 +209,12 @@ export default {
     position: fixed;
     z-index: 9999;
     top: 50%;
-    left: -12vw;
+    left: -10vw;
     transform: translate3d(0, -50%, 0);
     width: 43vw;
     aspect-ratio: 1/1;
     border-radius: 100%;
-    background-image: url(../assets/me.jpg);
+    background-image: url(../assets/me2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

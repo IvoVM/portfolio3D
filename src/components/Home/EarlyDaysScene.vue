@@ -2,8 +2,8 @@
   <div class="earlyDays">
     <TitleSection scene="earlyTitle">
       <TitleFunction
-        params="2008,2011"
-        subtitle="&lt;table&gt;&lt;tr&gt;&lt;td&gt;..."
+        params="2019,2021"
+        subtitle="&lt;MybeginningAsADeveloper&gt;&lt;tr&gt;&lt;td&gt;..."
         >earlyDays</TitleFunction
       >
 
@@ -16,10 +16,10 @@
 
     <SceneSection id="early-days">
       <TextBlock>
-        <p>Design & illustration.</p>
+        <p>Enthusiasm and imagination.</p>
         <p class="-big">
-          A frontend developer<br />
-          <span class="-purple">with one foothold in arts.</span>
+          A Javascript developer<br />
+          <span class="-purple">with a mission in mind.</span>
         </p>
       </TextBlock>
     </SceneSection>
@@ -28,26 +28,24 @@
         <p class="-big">
           <span class="-purple">Freelancing</span> &
           <span class="-purple">startuping,</span><br />
-          <span class="-purple">Inches</span> &
-          <span class="-purple">pixels.</span>
         </p>
         <p>
-          Illustrating album arts, book covers, and billboards as a freelancer.
-          And designing websites, online magazines, and news portals at my first
-          web studio.<br />
+          I began my adventure in web development, programming games in Unity,
+          then web pages in jquery and mysql, and then perfected myself in
+          fullstack development in javascript, carrying out several projects
+          along the way for SMEs in my city.<br />
         </p>
       </TextBlock>
     </SceneSection>
     <SceneSection id="early-days3">
       <TextBlock>
         <p>
-          We've proudly fueled the starring<br />
-          of some big Brazilian names such as
+          Among my first projects are<br />
           <span class="-big -purple"
-            ><em>Porta dos Fundos</em>, <em>Kibe Loco</em>, Fhits.tv,
-            <em>Galo Frito</em></span
+            ><em>El semanario</em>, <em>Fmmastermiramar</em>, Medicina Miramar,
+            <em>Las Gaviotas Restaurant</em></span
           >
-          among many others...
+          and many others...
         </p>
       </TextBlock>
     </SceneSection>
@@ -87,6 +85,7 @@ export default {
     left: 100%;
     transform: scale(0.4) translate3d(0, -50%, 0);
     transform-origin: 0 0;
+    display: none;
 
     @media screen and (max-width: 568px) {
       transform: scale(0.2) translate3d(0, -50%, 0);

@@ -1,27 +1,24 @@
 <template>
   <div class="bizScene">
     <TitleSection scene="bizTitle">
-      <TitleFunction params="2011,2019">biz</TitleFunction>
+      <TitleFunction params="2022,2023">Lomi.cl</TitleFunction>
     </TitleSection>
 
     <SceneSection id="biz1">
       <TextBlock>
         <p class="-big">
-          From 2011 to 2019 I was
-          <strong class="-purple">Head of Frontend</strong>
-          @
+          From 2022 to 2023 I was a
+          <strong class="-purple">Frontend Developer</strong>
+          at
           <a
-            href="https://www.bizcommerce.com.br/"
+            href="https://lomi.cl/"
             target="_blank"
             title="Visit Biz Commerce's website"
           >
-            biz</a
-          >.
+            @Lomi.cl</a
+          >
         </p>
-        <p>
-          A SaaS e-commerce platform focused on simplifying and customizing the
-          use of Magento.
-        </p>
+        <p>A Chilean company with both a web and app-based online store.</p>
       </TextBlock>
       <template #container>
         <ABiz :isPlaying="isPlaying" />
@@ -38,22 +35,25 @@
     <SceneSection id="biz2">
       <TextBlock>
         <p>
-          Throughout these years we delivered hundreds of
+          During those years, I developed several projects alongside a team that
+          included
           <span class="-big -purple">
-            tools, modules, integrations, and custom projects
+            developers, managers, and designers
           </span>
-          for online stores and service providers.
+          with the aim of improving the user experience on the website and
+          creating new software for the company.
         </p>
       </TextBlock>
     </SceneSection>
     <SceneSection id="biz3">
       <TextBlock>
         <p>
-          biz currently runs
+          My contributions include working on the
           <span class="-big">
-            <span class="-purple">+1200 stores</span>, payment & shipping
-            integrations with
-            <span class="-purple">thousands of transactions</span> daily.
+            <span class="-purple"
+              >creation and optimization of the app and website</span
+            >, managing user registration,, creating an investor statistics
+            page. <span class="-purple"> and debugging</span>.
           </span>
         </p>
       </TextBlock>
